@@ -8,12 +8,14 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/animate.css">
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9G0L8aCNErrgS-jT9eqlaig4Z5-y75_c&callback=initMap" async defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -119,79 +121,92 @@
 		</div>
 
 		<section id="service" class="home-section text-center bg-gray">
-		
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
-					<div class="section-heading">
-					<h2>How it works</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
 
-					</div>
+			<div class="heading-about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="wow bounceInDown animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
+								<div class="section-heading">
+									<h2>How it works</h2>
+									<i class="fa fa-2x fa-angle-down"></i>
+
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-5">
+						<hr class="marginbot-50">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-4">
+						<div class="wow fadeInLeft animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+							<div class="service-box">
+								<div class="service-icon">
+									<img src="images/technology.png" alt="">
+								</div>
+								<div class="service-desc">
+									<h5>Bird's Eye</h5>
+									<p>
+										Take a picture with your drone
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+							<div class="service-box">
+								<div class="service-icon">
+									<img src="images/computer.png" alt="">
+								</div>
+								<div class="service-desc">
+									<h5>Uplude</h5>
+									<p>
+										uplude the pictuer to XXX and edit the infomation
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+							<div class="service-box">
+								<div class="service-icon">
+									<img src="images/location.png" alt="">
+								</div>
+								<div class="service-desc">
+									<h5>Share</h5>
+									<p>
+										View the pic you uploaded on the map, and share it with others
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="featurette-divider">
 			</div>
-		</div>
+
+		</section>
 		<div class="container">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
+			<div class="row">
+				<div id="map"></div>
 			</div>
 		</div>
-        <div class="row">
-            <div class="col-sm-4 col-md-4">
-				<div class="wow fadeInLeft animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                <div class="service-box">
-					<div class="service-icon">
-						<img src="images/technology.png" alt="">
-					</div>
-					<div class="service-desc">
-						<h5>Bird's Eye</h5>
-						<p>Take a picture with your drone</p>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-sm-4 col-md-4">
-				<div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                <div class="service-box">
-					<div class="service-icon">
-						<img src="images/computer.png" alt="">
-					</div>
-					<div class="service-desc">
-						<h5>Uplude</h5>
-						<p>uplude the pictuer to XXX and edit the infomation</p>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-sm-4 col-md-4">
-				<div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                <div class="service-box">
-					<div class="service-icon">
-						<img src="images/location.png" alt="">
-					</div>
-					<div class="service-desc">
-						<h5>Share</h5>
-						<p>View the pic you uploaded on the map, and share it with others</p>
-					</div>
-                </div>
-				</div>
-            </div>
-        </div>		
-		</div>
-	</section>
-	    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
+		<!-- Core JavaScript Files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/wow.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/custom.js"></script>
 	</body>
 
 </html>
