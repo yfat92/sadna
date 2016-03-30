@@ -55,3 +55,14 @@
 	margin-right: 10px;
 	margin-left: 10px;
 }
+
+#map {
+	width: 500px;
+	height: 400px;
+}
+a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
+    background: #3F3C35;
+}
+.animated-grids {
+  margin-bottom: 7em;
+}
