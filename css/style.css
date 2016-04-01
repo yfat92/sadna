@@ -22,6 +22,9 @@
 .btn-upload-homepage {
 	margin: 10px 0 10px;
 }
+.btn-view-more {
+	margin: 20px 0 10px;
+}
 .carousel-caption-homepage {
 	position: absolute;
 	right: 15%;
@@ -61,8 +64,8 @@
 	height: 400px;
 }
 a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
-    background: #3F3C35;
+	background: #3F3C35;
 }
 .animated-grids {
-  margin-bottom: 7em;
+	margin-bottom: 7em;
 }
