@@ -69,3 +69,20 @@ a.btn.btn-primary.btn-lg.see-button.hvr-shutter-out-horizontal {
 .animated-grids {
 	margin-bottom: 7em;
 }
+.thumb{
+    width: 390px;
+    height: 292px;
+        display: inline-block;
+
+}
+.clip-link{
+    position: absolute;
+    _position: static;
+    bottom: -100px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    text-align: center;
+    white-space: nowrap;
+    word-break: normal;
+}
