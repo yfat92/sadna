@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>sadna11</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar2">
+							<span class="sr-only">Toggle-navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="http://disputebills.com"><img src="http://disputebills.com/wp-content/themes/disputebills-theme/assets/images/dispute-bills-logo.png" alt="Dispute Bills"> </a>
+					</div>
+					<div id="navbar2" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#">Picture</a>
+							</li>
+							<li>
+								<a href="#">video</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							</li>
+						</ul>
+					</div>
+					</div>
+			</nav>
+			<div class="navbar-video">
+				<a href="#" alt="like"><img src="images/like.png"></a>
+				<a href="#"><img src="images/star.png"></a>
+			</div>
+			<iframe width="1140" height="641" src="https://www.youtube.com/embed/pFaW_xbtULk" frameborder="0" allowfullscreen></iframe>
+			<div id="mapDiv"></div>
+			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAj_-NlXZB74mYilggkeyH1KG_z1n6EdyU&sensor=true"> 
+			</script>
+			<script>
+			var mapCenter = new google.maps.LatLng(32.783220,34.966452);
+			var mapProp = {
+  				zoom: 12,
+  				minZoom: 1,
+  				maxZoom: 20,
+  				center: mapCenter,
+  				mapTypeId: google.maps.MapTypeId.HYBRID,
+  				zoomControl : true
+			};
+			var mapDiv = document.getElementById("mapDiv"); 
+			
+			var map=new google.maps.Map(mapDiv,mapProp);
+			
+			var marker = new google.maps.Marker({
+  				position: mapCenter,
+  				map: map,
+  				title: 'איצטדיון סמי עופר,חיפה'
+			});
+			</script>
+	</body>
+</html>
